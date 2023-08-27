@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+
+
+body{
+
+    font-family: 'Oxygen', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/* START NAVBAR SECTION  */
+
+.input-groups{
+    width: 100%;
+    position: relative;
+
+}
+
+.form-controls{
+    width: 100%;
+    border:none;
+    outline: 0;
+    border-bottom: 2px solid gray;
+    margin: 20px 0;
+    transition: all .3s linear;
+
+}
+
+.input-groups label{
+    display: block;
+    position: absolute;
+    top:10px;
+
+    transition: all .3s linear;
+
+}
+
+.form-controls:focus ~ label{
+    font-size: 12px;
+    top: 0px;
+
+}
+
+.form-controls:focus{
+    border-bottom: 2px solid blue;
+}
+
+.fa-search{
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+/*
+.mycarts{
+    position: absolute;
+    top:55px;
+    right: 160px;
+} */
+
+.mycarts:hover{
+    color: blue !important;
+}
+.brandnames{
+
+    font-size: 40px !important;
+
+}
+.brandnames span{
+    letter-spacing: 10px;
+}
+
+.texthover:hover{
+    color:rgb(93, 167, 236) !important;
+}
+
+/* END NAVBAR SECTION  */
+/* START BANDER SECTION  */
+/* END BANDER SECTION  */
+.banders{
+
+    position: absolute;
+    top:50%;
+    left: 20px;
+    /* opacity: 0; */
+    transform: translateY(-50%);
+
+    animation: banderain 3s linear reverse;
+}
+
+@keyframes banderain {
+    to{
+        opacity: 0;
+    }
+    from{
+        opacity: 1;
+    }
+
+}
+/* START FOOTER SECTION  */
+footer{
+    background-color: #ddd;
+}
+.list-group{
+    background: #ddd !important;
+}
+.texthovers:hover{
+    color:blue !important;
+    font-size: 1.1rem;
+
+
+    transition: all .3s linear;
+}
+
+.texthovers.active{
+    color: blue !important;
+
+}
+
+
+
+/* END FOOTER SECTION  */
